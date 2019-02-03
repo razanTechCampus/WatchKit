@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Bootcamp" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="ela-B6-S9V">
+                            <items>
+                                <tableRow identifier="CountryRow" id="mYe-Gj-eA3" customClass="CountryRow" customModule="Bootcamp_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="koF-PX-A5U">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="country label" id="gdX-9A-VIh">
+                                                <fontDescription key="font" type="system" pointSize="20"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="countryName" destination="gdX-9A-VIh" id="64Q-pU-5O3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="ela-B6-S9V" id="aRD-rI-F7Q"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-46" y="31"/>
+        </scene>
+        <!--showDetails-->
+        <scene sceneID="NJk-Fk-O00">
+            <objects>
+                <controller identifier="showDetails" id="fhG-b9-Lqv" customClass="DetailedInterfaceController" customModule="Bootcamp_Extension">
+                    <items>
+                        <label alignment="center" text="Name" id="6R2-Lr-l50">
+                            <fontDescription key="font" type="system" pointSize="25"/>
+                        </label>
+                        <imageView alignment="center" image="Leb" id="95O-ap-rBg"/>
+                        <label alignment="center" text="Capital" id="xQu-ec-iEg">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                        <label alignment="center" text="Currency" id="Fbt-zs-846">
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="capitalName" destination="xQu-ec-iEg" id="bWb-OQ-HTw"/>
+                        <outlet property="countryName" destination="6R2-Lr-l50" id="SBR-03-Rc3"/>
+                        <outlet property="currencyName" destination="Fbt-zs-846" id="o7e-hh-jlp"/>
+                        <outlet property="flagImage" destination="95O-ap-rBg" id="o7C-JH-4CF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="233" y="31"/>
+        </scene>
+    </scenes>
+</document>

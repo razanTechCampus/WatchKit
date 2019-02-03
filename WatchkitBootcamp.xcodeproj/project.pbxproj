@@ -15,6 +15,15 @@
 		15F1350321FDB23400BDA0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F1350121FDB23400BDA0C0 /* LaunchScreen.storyboard */; };
 		15F1350E21FDB23400BDA0C0 /* WatchkitBootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F1350D21FDB23400BDA0C0 /* WatchkitBootcampTests.swift */; };
 		15F1351921FDB23400BDA0C0 /* WatchkitBootcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F1351821FDB23400BDA0C0 /* WatchkitBootcampUITests.swift */; };
+		15F1352C21FDB86B00BDA0C0 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F1352A21FDB86B00BDA0C0 /* Interface.storyboard */; };
+		15F1352E21FDB86C00BDA0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F1352D21FDB86C00BDA0C0 /* Assets.xcassets */; };
+		15F1353521FDB86C00BDA0C0 /* Bootcamp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15F1353421FDB86C00BDA0C0 /* Bootcamp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		15F1353A21FDB86C00BDA0C0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F1353921FDB86C00BDA0C0 /* InterfaceController.swift */; };
+		15F1353C21FDB86C00BDA0C0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F1353B21FDB86C00BDA0C0 /* ExtensionDelegate.swift */; };
+		15F1353E21FDB86C00BDA0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15F1353D21FDB86C00BDA0C0 /* Assets.xcassets */; };
+		15F1354221FDB86C00BDA0C0 /* Bootcamp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 15F1352821FDB86B00BDA0C0 /* Bootcamp.app */; };
+		15F1355221FDC2F700BDA0C0 /* DetailedInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F1355121FDC2F700BDA0C0 /* DetailedInterfaceController.swift */; };
+		15F1355421FDC7BB00BDA0C0 /* CountryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F1355321FDC7BB00BDA0C0 /* CountryRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +41,46 @@
 			remoteGlobalIDString = 15F134F121FDB23400BDA0C0;
 			remoteInfo = WatchkitBootcamp;
 		};
+		15F1353621FDB86C00BDA0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F134EA21FDB23400BDA0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15F1353321FDB86C00BDA0C0;
+			remoteInfo = "Bootcamp Extension";
+		};
+		15F1354021FDB86C00BDA0C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15F134EA21FDB23400BDA0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15F1352721FDB86B00BDA0C0;
+			remoteInfo = Bootcamp;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15F1354621FDB86C00BDA0C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				15F1353521FDB86C00BDA0C0 /* Bootcamp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F1354A21FDB86C00BDA0C0 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				15F1354221FDB86C00BDA0C0 /* Bootcamp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		15F134F221FDB23400BDA0C0 /* WatchkitBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchkitBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +97,17 @@
 		15F1351421FDB23400BDA0C0 /* WatchkitBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchkitBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F1351821FDB23400BDA0C0 /* WatchkitBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchkitBootcampUITests.swift; sourceTree = "<group>"; };
 		15F1351A21FDB23400BDA0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F1352821FDB86B00BDA0C0 /* Bootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F1352B21FDB86B00BDA0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		15F1352D21FDB86C00BDA0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15F1352F21FDB86C00BDA0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F1353421FDB86C00BDA0C0 /* Bootcamp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bootcamp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		15F1353921FDB86C00BDA0C0 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		15F1353B21FDB86C00BDA0C0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		15F1353D21FDB86C00BDA0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15F1353F21FDB86C00BDA0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F1355121FDC2F700BDA0C0 /* DetailedInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedInterfaceController.swift; sourceTree = "<group>"; };
+		15F1355321FDC7BB00BDA0C0 /* CountryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +132,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15F1353121FDB86C00BDA0C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +148,8 @@
 				15F134F421FDB23400BDA0C0 /* WatchkitBootcamp */,
 				15F1350C21FDB23400BDA0C0 /* WatchkitBootcampTests */,
 				15F1351721FDB23400BDA0C0 /* WatchkitBootcampUITests */,
+				15F1352921FDB86B00BDA0C0 /* Bootcamp */,
+				15F1353821FDB86C00BDA0C0 /* Bootcamp Extension */,
 				15F134F321FDB23400BDA0C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +160,8 @@
 				15F134F221FDB23400BDA0C0 /* WatchkitBootcamp.app */,
 				15F1350921FDB23400BDA0C0 /* WatchkitBootcampTests.xctest */,
 				15F1351421FDB23400BDA0C0 /* WatchkitBootcampUITests.xctest */,
+				15F1352821FDB86B00BDA0C0 /* Bootcamp.app */,
+				15F1353421FDB86C00BDA0C0 /* Bootcamp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +198,29 @@
 			path = WatchkitBootcampUITests;
 			sourceTree = "<group>";
 		};
+		15F1352921FDB86B00BDA0C0 /* Bootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				15F1352A21FDB86B00BDA0C0 /* Interface.storyboard */,
+				15F1352D21FDB86C00BDA0C0 /* Assets.xcassets */,
+				15F1352F21FDB86C00BDA0C0 /* Info.plist */,
+			);
+			path = Bootcamp;
+			sourceTree = "<group>";
+		};
+		15F1353821FDB86C00BDA0C0 /* Bootcamp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				15F1353921FDB86C00BDA0C0 /* InterfaceController.swift */,
+				15F1355121FDC2F700BDA0C0 /* DetailedInterfaceController.swift */,
+				15F1353B21FDB86C00BDA0C0 /* ExtensionDelegate.swift */,
+				15F1353D21FDB86C00BDA0C0 /* Assets.xcassets */,
+				15F1353F21FDB86C00BDA0C0 /* Info.plist */,
+				15F1355321FDC7BB00BDA0C0 /* CountryRow.swift */,
+			);
+			path = "Bootcamp Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +231,12 @@
 				15F134EE21FDB23400BDA0C0 /* Sources */,
 				15F134EF21FDB23400BDA0C0 /* Frameworks */,
 				15F134F021FDB23400BDA0C0 /* Resources */,
+				15F1354A21FDB86C00BDA0C0 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				15F1354121FDB86C00BDA0C0 /* PBXTargetDependency */,
 			);
 			name = WatchkitBootcamp;
 			productName = WatchkitBootcamp;
@@ -184,6 +279,40 @@
 			productReference = 15F1351421FDB23400BDA0C0 /* WatchkitBootcampUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		15F1352721FDB86B00BDA0C0 /* Bootcamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F1354721FDB86C00BDA0C0 /* Build configuration list for PBXNativeTarget "Bootcamp" */;
+			buildPhases = (
+				15F1352621FDB86B00BDA0C0 /* Resources */,
+				15F1354621FDB86C00BDA0C0 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15F1353721FDB86C00BDA0C0 /* PBXTargetDependency */,
+			);
+			name = Bootcamp;
+			productName = Bootcamp;
+			productReference = 15F1352821FDB86B00BDA0C0 /* Bootcamp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		15F1353321FDB86C00BDA0C0 /* Bootcamp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15F1354321FDB86C00BDA0C0 /* Build configuration list for PBXNativeTarget "Bootcamp Extension" */;
+			buildPhases = (
+				15F1353021FDB86C00BDA0C0 /* Sources */,
+				15F1353121FDB86C00BDA0C0 /* Frameworks */,
+				15F1353221FDB86C00BDA0C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bootcamp Extension";
+			productName = "Bootcamp Extension";
+			productReference = 15F1353421FDB86C00BDA0C0 /* Bootcamp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +334,12 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 15F134F121FDB23400BDA0C0;
 					};
+					15F1352721FDB86B00BDA0C0 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					15F1353321FDB86C00BDA0C0 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 15F134ED21FDB23400BDA0C0 /* Build configuration list for PBXProject "WatchkitBootcamp" */;
@@ -223,6 +358,8 @@
 				15F134F121FDB23400BDA0C0 /* WatchkitBootcamp */,
 				15F1350821FDB23400BDA0C0 /* WatchkitBootcampTests */,
 				15F1351321FDB23400BDA0C0 /* WatchkitBootcampUITests */,
+				15F1352721FDB86B00BDA0C0 /* Bootcamp */,
+				15F1353321FDB86C00BDA0C0 /* Bootcamp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +386,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F1352621FDB86B00BDA0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F1352E21FDB86C00BDA0C0 /* Assets.xcassets in Resources */,
+				15F1352C21FDB86B00BDA0C0 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15F1353221FDB86C00BDA0C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F1353E21FDB86C00BDA0C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +435,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15F1353021FDB86C00BDA0C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15F1353C21FDB86C00BDA0C0 /* ExtensionDelegate.swift in Sources */,
+				15F1353A21FDB86C00BDA0C0 /* InterfaceController.swift in Sources */,
+				15F1355221FDC2F700BDA0C0 /* DetailedInterfaceController.swift in Sources */,
+				15F1355421FDC7BB00BDA0C0 /* CountryRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +458,16 @@
 			isa = PBXTargetDependency;
 			target = 15F134F121FDB23400BDA0C0 /* WatchkitBootcamp */;
 			targetProxy = 15F1351521FDB23400BDA0C0 /* PBXContainerItemProxy */;
+		};
+		15F1353721FDB86C00BDA0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15F1353321FDB86C00BDA0C0 /* Bootcamp Extension */;
+			targetProxy = 15F1353621FDB86C00BDA0C0 /* PBXContainerItemProxy */;
+		};
+		15F1354121FDB86C00BDA0C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15F1352721FDB86B00BDA0C0 /* Bootcamp */;
+			targetProxy = 15F1354021FDB86C00BDA0C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -311,6 +486,14 @@
 				15F1350221FDB23400BDA0C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		15F1352A21FDB86B00BDA0C0 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15F1352B21FDB86B00BDA0C0 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -550,6 +733,88 @@
 			};
 			name = Release;
 		};
+		15F1354421FDB86C00BDA0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UR64E8K793;
+				INFOPLIST_FILE = "Bootcamp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = razan.WatchkitBootcamp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		15F1354521FDB86C00BDA0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UR64E8K793;
+				INFOPLIST_FILE = "Bootcamp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = razan.WatchkitBootcamp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		15F1354821FDB86C00BDA0C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UR64E8K793;
+				IBSC_MODULE = Bootcamp_Extension;
+				INFOPLIST_FILE = Bootcamp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = razan.WatchkitBootcamp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		15F1354921FDB86C00BDA0C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UR64E8K793;
+				IBSC_MODULE = Bootcamp_Extension;
+				INFOPLIST_FILE = Bootcamp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = razan.WatchkitBootcamp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +850,24 @@
 			buildConfigurations = (
 				15F1352421FDB23400BDA0C0 /* Debug */,
 				15F1352521FDB23400BDA0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F1354321FDB86C00BDA0C0 /* Build configuration list for PBXNativeTarget "Bootcamp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F1354421FDB86C00BDA0C0 /* Debug */,
+				15F1354521FDB86C00BDA0C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15F1354721FDB86C00BDA0C0 /* Build configuration list for PBXNativeTarget "Bootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F1354821FDB86C00BDA0C0 /* Debug */,
+				15F1354921FDB86C00BDA0C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
